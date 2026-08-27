@@ -37,26 +37,26 @@ function inputNumber(num){
     display.innerText = currentInput;
 }
 
-function inputOprator(op){
-    if(oprator !== '') calculate(); // pehle wala calculate kar do 
+function inputOperator(op){
+    if(operator !== '') calculate(); // first calculate 
     previousInput = currentInput;
-    oprator = op;
+    operator = op;
     display.innerText = previousInput+ ' ' + op + ' '; // OPERATOR 
     shouldResetDisplay = true;
 }
 
 function calculate(){
-    if(oprator === '') return;
-    const expression=previousInput+''+oprator+''+currentInput;
+    if(operator === '') return;
+    const expression=previousInput+''+operator+''+currentInput;
     
     const prev = parseFloat(previousInput);
     const current = parseFloat(currentInput);
     let result;
     
-    if(oprator === '+') result = prev + current;
-    else if(oprator === '-') result = prev - current;
-    else if(oprator === '*') result = prev * current;
-    else if(oprator === '/') {
+    if(operator === '+') result = prev + current;
+    else if(operator === '-') result = prev - current;
+    else if(operator === '*') result = prev * current;
+    else if(operator === '/') {
         if(current === 0) { 
             alert(" Eror:does not divided by 0"); 
             return; 
@@ -69,7 +69,7 @@ function calculate(){
     display.innerText = expression + '=' + result;
     
     currentInput = result.toString();
-    oprator = '';
+    operator = '';
     previousInput = '';
     shouldResetDisplay = true;
 }
