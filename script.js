@@ -86,3 +86,36 @@ function resetCalculator(){
     oprator = '';
     display.innerText = currentInput;
 }
+
+//  Keyboard Support
+document.addEventListener('keydown', function(event) {
+    const key = event.key;
+
+    // Numbers 0-9 aur .
+    if (key >= '0' && key <= '9' || key === '.') {
+        inputNumber(key);
+    }
+    
+    // Operators
+    if (key === '+') inputOPerator('+');
+    if (key === '-') inputOPerator('-');
+    if (key === '*') inputOPerator('*');
+    if (key === '/') inputOPerator('/');
+    if (key === '%') inputOPerator('%');
+    
+    // Enter = =
+    if (key === 'Enter') {
+        event.preventDefault(); 
+        calculate();
+    }
+    
+    // Backspace = delete
+    if (key === 'Backspace') deleteLast();
+    
+    // Escape ya C = Reset
+    if (key === 'Escape' || key === 'c' || key === 'C') resetcalculator();
+});
+
+
+
+
