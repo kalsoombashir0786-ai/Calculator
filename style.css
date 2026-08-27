@@ -1,0 +1,76 @@
+/* full page  design*/
+body{
+    background-color:grey;
+height:100vh;/* height of full screen */
+font-family: 'Segoe UI', Tahoma, Geneva,
+ Verdana, sans-serif;
+align-items: center;/* center horizontaly*/
+justify-content: center;/*center vertically*/
+margin: 0;/*0 gap */
+display:flex;/* use flexbox to center calculator*/
+}
+.calculator{
+    width:400px ;
+}
+/*display screen */
+.display{
+    width:400px;
+    font-size: 3rem;/*rem=root em ,3rem=3x16px=48px,make numbers big */
+    font-weight:700 ;
+    text-align: right;
+      background-color:#242d44; 
+    border-radius:10px;/*make corner rounded*/
+    color:white;
+    padding:25px;/*space inside*/
+    margin-bottom:20px ;
+}
+/*buton container */
+#btn{
+    width:400px;
+    height:450px;
+    background-color:/*rgb(88, 86, 84)*/}
+    .button{
+      background-color:#242d44; 
+      display:grid ;/*create a grid container .puts all buttons in rows and columns like a table.*/
+       padding: 25px;
+      border-radius: 10px;
+      grid-template-columns:repeat(4,1fr); /*make 4 equal columns */
+      gap:20px;/*add space between grid items */
+    }
+    /* button design */
+    button{
+      background-color:#eae3db;
+       color:#444b5a;
+       border:none; 
+       border-radius: 10px;
+       padding:15px;
+       font-size: 1.8rem; 
+       font-weight:700;/*bold text*/
+       cursor:pointer;/*show hand pointer o hover*/
+       box-shadow:0 4px #b3a497 ;
+
+    }
+    /*button click effectwhne button is pressed*/
+    button:active{
+        transform:translateY(2px) ;/*move button down 2 px*/
+        box-shadow: 0 2px #79829c;
+    }
+    .del,.reset{
+        background-color: #647299;
+        color: white;
+        font-size:1.2rem ;
+        box-shadow: 0 2px #414e73;
+         
+    }
+    .equal{
+        background-color:rgb(189, 100, 100) ;
+        color:#eae3db;
+        box-shadow: 0 2px #93261a;
+    }
+   .reset{
+grid-column:2 span ;
+   }
+ .equal{
+    grid-column: span 2;
+ }
+
