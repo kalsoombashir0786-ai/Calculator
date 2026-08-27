@@ -1,5 +1,5 @@
 # Calculator
-my fist simple calculator website using HTML, CSS &amp;JavaScript.
+ My First Calculator Website using HTML, CSS &amp;JavaScript.
 ## Features
 - Addition
 - Subtraction
@@ -23,8 +23,8 @@ You can use the calculator by clicking the buttons or using your keyboard.
 [View my calculator Repository](https://kalsoombashir0786-ai.github.io/Calculator/)
 
 ## My calculator
+calculator.jpg
 
-![Uploading calculator.jpg…]()
 
 
 
