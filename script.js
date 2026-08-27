@@ -2,7 +2,7 @@ const display = document.querySelector('.display');//html sy scren ko utha kr js
 const buttons = document.querySelectorAll('button');//select all button lements 
 let currentInput = '0';//current number begin type 
 let previousInput = '';//previous  before oprator
-let oprator = '';
+let operator = '';
 let shouldResetDisplay = false;//flag to clear display after oprator is pressed
 
 // add click event listener to all buttons
@@ -15,7 +15,7 @@ buttons.forEach(button => {
         inputNumber(value);
     }
     else if(value === '+' || value === '-' || value === '*' || value === '/'){
-        inputOprator(value);
+        inputOperator(value);
     }
     else if(value === '='){
         calculate();
