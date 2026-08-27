@@ -23,7 +23,7 @@ You can use the calculator by clicking the buttons or using your keyboard.
 [View my calculator Repository](https://kalsoombashir0786-ai.github.io/Calculator/)
 
 ## My calculator
-![My Calculator](calculator.jpg)
+<img src="calculator.jpg" width="300">
 
 
 
