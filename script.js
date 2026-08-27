@@ -97,11 +97,11 @@ document.addEventListener('keydown', function(event) {
     }
     
     // Operators
-    if (key === '+') inputOPerator('+');
-    if (key === '-') inputOPerator('-');
-    if (key === '*') inputOPerator('*');
-    if (key === '/') inputOPerator('/');
-    if (key === '%') inputOPerator('%');
+    if (key === '+') inputOperator('+');
+    if (key === '-') inputOperator('-');
+    if (key === '*') inputOperator('*');
+    if (key === '/') inputOperator('/');
+    if (key === '%') inputOperator('%');
     
     // Enter = =
     if (key === 'Enter') {
@@ -113,7 +113,7 @@ document.addEventListener('keydown', function(event) {
     if (key === 'Backspace') deleteLast();
     
     // Escape ya C = Reset
-    if (key === 'Escape' || key === 'c' || key === 'C') resetcalculator();
+    if (key === 'Escape' || key === 'c' || key === 'C') resetCalculator();
 });
 
 
